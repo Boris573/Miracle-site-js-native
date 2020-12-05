@@ -1,0 +1,413 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+body {
+    font: 24px Roboto;
+    background: #ececec;
+}
+hr {
+    border: none; /* Убираем границу */
+    background-color: #fcb118; /* Цвет линии */
+    height: 1px;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+
+
+  
+header {
+    padding: 10px;
+    background-color: #292929;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: 0 0 5px;
+    margin-bottom: 20px;
+}
+.logo-head {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left:0;
+    image-rendering: crisp-edges;
+}
+
+.navigation-panel-list {
+    margin-top: 70px;
+    font: 24px Bebas Neue;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: space-between;
+    color: #292929;
+}
+.navigation-panel-list li a{
+    color: #a7a7a7;
+    margin-left: 40px;
+}
+.navigation-panel-list li a:hover{
+    text-decoration: none;
+	color: #fcb118;
+}
+
+.active {
+    color: #e99f0c !important;
+}
+
+.form-wrapper{
+    margin-top: 50px;
+	float: right;
+	width: 320px;
+	padding: 10px;
+	background: rgba(0,0,0,.2);
+	border-radius: 10px;
+}
+.form-wrapper input{
+	width: 220px;
+	height: 40px;
+	padding: 10px 5px;
+	float: left;
+	font-weight: bold;
+	font-size: 15px;
+	font-family: Arial, sans-serif;
+	border: 0px;
+	background: #eee;
+	border-radius: 3px 0 0 3px;	
+}
+.form-wrapper input:focus {
+	outline: 0;
+	background: #fff;
+	box-shadow: 0 0 2px rgba(0,0,0.8) inset;
+}
+.form-wrapper button{
+	position: relative;
+	float: right;
+	border: 0px;
+	padding: 0px;
+	cursor: pointer;
+	height: 40px;
+	width: 80px;
+	font-weight: bold;
+	font-size: 15px;
+	font-family: Arial, sans-serif;
+	line-height: 40px;
+	color: #fff;
+	text-transform: uppercase;
+	background: #fcb118;
+	border-radius: 0 3px 3px 0;
+	text-shadow: 0 -1px 0 rgba(0,0,0,.3) 
+}
+.form-wrapper button:hover{
+	background: #FCA118;
+}
+.form-wrapper button:before{
+	content: "";
+	position: absolute;
+	border-width: 8px 8px 8px 0;
+	border-style: solid solid solid none;
+	border-color: transparent #fcb118 transparent;
+	top: 12px;
+	left: -6px;
+}
+.form-wrapper button:hover:before{
+	border-right-color: #FCA118 	
+}
+.form-wrapper button:active, .form-wrapper button:focus {
+	background: #FC7F18
+}
+.form-wrapper button:active:before{
+	border-right-color:#FC7F18
+}
+
+
+
+
+.wrapper {
+    box-shadow: 0 0 1px #797979;
+    margin-right: 15%;
+    margin-left: 15%;
+    border: 1px solid #ccc; 
+    background-color: #fff;
+    padding: 20px 40px 0px 40px;
+}
+
+.section {
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+.news {
+    column-count: 1;
+    column-gap: 20px;
+}
+
+.headline {
+    font-size: 32px;
+    text-align: left;
+    margin-bottom: -15px;
+}
+
+.section-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5% 5% 5% 5%;
+}
+
+.not-column {
+    display: block !important;
+}
+
+.section-info a {
+    text-decoration: none;
+    color: black;
+}
+
+.section-info a:hover {
+    text-decoration: none;
+    color: rgb(90, 90, 90);
+}
+
+
+.section-info__content {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgb(235, 235, 235);
+}
+
+.section-info__content img{
+    border-radius: 10px;
+    float: left;
+    margin-right: 30px;
+    object-fit: cover;
+    width: 150px;
+    height: 120px;
+}
+
+.news-content {
+    font: 16px Noto Sans JP;
+    margin-left: 180px;
+}
+
+.center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.news-headline {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+
+.posters {
+    margin-top: 50px;
+}
+
+.trailers {
+    margin-top: 40px;
+}
+
+.video {
+    margin-top: 10px;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+}
+
+.commands {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.statistic {
+    margin-right: 20px;
+}
+
+.info {
+    width: 700px;
+    padding: 20px;
+}
+
+#like {
+    width: 32px;
+}
+
+#share {
+    width: 29px;
+}
+
+.post-photo {
+    margin: auto;
+}
+
+.descr {
+    margin-bottom: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+.descr p {
+    margin-top: 20px;
+}
+
+.map {
+    margin: auto;
+}
+
+.contact-info {
+    margin: 10px 10px 0 0;
+}
+
+#office {
+    font-size: 22px;
+}
+
+.office-info {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.office-info p {
+    margin-top: -10px;
+}
+
+.office-info__item {
+    margin-top: 5px;
+}
+
+.offices {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.film-list img {
+    border-radius: 10px;
+    width: 200px;
+    height: 300px;
+}
+
+
+
+
+/* 
+Comments
+
+
+
+#comment {
+    width: 31px;
+}
+
+.comm {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin-bottom: -35px;
+    font-size: 16px;
+
+}
+
+.nik {
+    margin-right: 20px;
+    font-weight: 600;
+} */
+
+
+
+footer {
+    font-size: 20px;
+    margin-top: 10px;
+    color: rgb(90, 90, 90);
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+}
+
+.left-text {
+    margin: auto 0px 10px 50px;
+}
+
+.miracle-с {
+    margin-bottom: 20px;
+}
+
+.rights {
+    font-size: 18px;
+}
+
+.footer-navigation-panel-list {
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    flex-direction: column;
+    color: #292929;
+}
+.footer-navigation-panel-list li a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer-navigation-panel-list li a:hover{
+    text-decoration: none;
+	color: #fcb118;
+}
+
+.social-networks img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.social-networks {
+    margin-right: 40px;
+}
+
+.clarity {
+    opacity:0.5;
+    filter:alpha(opacity=50);   
+}
+    
+.clarity:hover {
+    -moz-transition: all 0.4s; 
+    -webkit-transition: all 0.4s;  
+    -ms-transition: all 0.4s;  
+    -o-transition: all 0.4s;  
+    transition: all 0.4s; 
+    opacity:1;
+    filter:alpha(opacity=100);
+}
+
+
+
+
+
+
+
+
+
+
+

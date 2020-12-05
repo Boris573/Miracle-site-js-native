@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Miracle</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@300&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700" rel="stylesheet">
+    <link rel='stylesheet prefetch' href='https://unpkg.com/flickity@2/dist/flickity.min.css'>
+    
+    <link rel="stylesheet" href="../css/photo-slider.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-head">
+            <a href="#">
+                <img class="logo-img" src="../assets/img/logohead.png">
+            </a>
+        </div>
+        <ul class="navigation-panel-list">
+            <li><a class="section-btn active" id="homeBtn" href="#">Home</a></li>
+            <li><a class="section-btn" id="filmsBtn" href="#">Films</a></li>
+            <li><a class="section-btn" id="photosBtn" href="#">Photos</a></li>
+            <li><a class="section-btn" id="contactsBtn" href="#">Contacts</a></li>
+        </ul>
+        <div class="search">
+            <form class="form-wrapper cf">
+                <input type="text" placeholder="Boris 2" required>
+                <button type="sumbit">Search</button>
+            </form>
+        </div>
+    </header>
+
+
+
+    <div class="wrapper">
+        <div class="content">
+            <div class="tab-item">
+                <div id="news" class="section">
+                    <div class="section-name">
+                        <h2 class="headline"><b>News</b></h2>
+                        <hr />
+                    </div>
+                    <div class="section-info">
+                        <a href="#">
+                            <div class="section-info__content">
+                                <img src="../assets/posters/news.jpg">
+                                <div class="news-content">
+                                    <div class="news-headline">
+                                        Trailer release data is set for August 17
+                                    </div>
+                                    <div class="news-text">
+                                        The creators of the film "Boris" announced that trailer for the film should be
+                                        released on 17 August. 17 August is the birthday of Boris himself.
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="section-info__content">
+                                <img src="../assets/posters/boris.jpg">
+                                <div class="news-content">
+                                    <div class="news-headline">
+                                        Chepicov Boris announced "Boris 2"
+                                    </div>
+                                    <div class="news-text">
+                                        The president of the Miracle studio, Boris, announced new film with name "Boris
+                                        2". There is no details about the movie.
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="section-info__content">
+                                <img id="news3-photo" src="../assets/img/news3.jpg">
+                                <div class="news-content">
+                                    <div class="news-headline">
+                                        Mads Mikkelsen officially replaces Johnny Depp
+                                    </div>
+                                    <div class="news-text">
+                                        Film Studio Warner Bros. has officially confirmed that Mads Mikkelsen will
+                                        replace Johnny Depp in Fantastic Beasts and Where to Find Them 3. This is
+                                        reported by The Wrap.
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="trailers" class="section">
+                    <div class="section-name">
+                        <h2 class="headline"><b>Trailers</b></h2>
+                        <hr />
+                    </div>
+                    <div class="section-info center trailers">
+                        <div class="video">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/MXLYieB6ebU"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="video">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/XW2E2Fnh52w"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-item">
+                <div id="films" class="section">
+                    <div class="section-name">
+                        <h2 class="headline"><b>Films</b></h2>
+                        <hr />
+                    </div>
+                    <div class="section-info center posters not-column">
+
+                        <div class="film-list">
+                            <div class="slide--parent">
+                                <div class="parent--el">
+                                    <div class="two--col">
+                                        <div class="is-item has--img">
+                                            <figure class="the-img">
+                                                <img src="../assets/posters/thor-ragnarok.jpg" alt="">
+                                            </figure>
+                                        </div>
+                                        <div class="is-item has--content">
+                                            <div class="is-item--inner">
+                                                <h1 class="slide-name"><span>Thor: Ragnarok</span></h1>
+                                                <small>2017</small>
+                                                <hr class="horiz-line">
+                                                <p>Returning to Asgard, Thor discovers that the actions of his brother
+                                                    Loki, who seized the throne of Asgard, led to the approach of the
+                                                    most terrible event - Ragnarok.</p>
+                                                <p>According to legend, this will mark the last battle of Asgard, the
+                                                    consequence of which will be its complete destruction.</p>
+                                                <p>The heroes will have to face the worst enemy of all nine worlds - the
+                                                    fire demon Surtur, whose goal is to fulfill the prophecy of Ragnarok
+                                                    and destroy the nine worlds.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="parent--el">
+                                    <div class="two--col">
+                                        <div class="is-item has--img">
+                                            <figure class="the-img">
+                                                <img src="../assets/posters/shazam.jpg" alt="">
+                                            </figure>
+                                        </div>
+                                        <div class="is-item has--content">
+                                            <div class="is-item--inner">
+                                                <h1 class="slide-name"><span>Shazam</span></h1>
+                                                <small>2019</small>
+                                                <hr class="horiz-line">
+                                                <p>Thanks to the ancient wizard, the 14-year-old guy turns into a
+                                                    completely adult superhero Shazam.</p>
+                                                <p>In his heart, he remains a child, so he behaves accordingly and is
+                                                    drawn to the fullest.</p>
+                                                <p>Shazam tests his limits with the recklessness of a mischievous child,
+                                                    but soon he will have to regain control of his abilities to fight
+                                                    the deadly forces of evil Dr. Thaddeus Sivana.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="parent--el">
+                                    <div class="two--col">
+                                        <div class="is-item has--img">
+                                            <figure class="the-img">
+                                                <img src="../assets/posters/cap-marvel.jpg" alt="">
+                                            </figure>
+                                        </div>
+                                        <div class="is-item has--content">
+                                            <div class="is-item--inner">
+                                                <h1 class="slide-name"><span>Captain Marvel</span></h1>
+                                                <small>2019</small>
+                                                <hr class="horiz-line">
+                                                <p>Captain Marvel is an extraterrestrial Kree warrior who finds herself
+                                                    caught in the middle of an intergalactic battle between her people
+                                                    and the Skrulls.</p>
+                                                <p>Living on Earth in 1995, she keeps having recurring memories of
+                                                    another life as U.S. Air Force pilot Carol Danvers.</p>
+                                                <p>With help from Nick Fury, Captain Marvel tries to uncover the secrets
+                                                    of her past while harnessing her special superpowers to end the war
+                                                    with the evil Skrulls.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="parent--el">
+                                    <div class="two--col">
+                                        <div class="is-item has--img">
+                                            <figure class="the-img">
+                                                <img src="../assets/posters/avangers.jpg" alt="">
+                                            </figure>
+                                        </div>
+                                        <div class="is-item has--content">
+                                            <div class="is-item--inner">
+                                                <h1 class="slide-name"><span>Avengers: Infinity War</span></h1>
+                                                <small>2018</small>
+                                                <hr class="horiz-line">
+                                                <p>As the Avengers and their allies continue to defend the world from a
+                                                    variety of dangers that a single superhero would not have been able
+                                                    to handle, a new threat emerges from space: Thanos.</p>
+                                                <p>The intergalactic tyrant pursues the goal of collecting all six
+                                                    Infinity Stones - artifacts of incredible power, with which you can
+                                                    change reality at will.</p>
+                                                <p>Everything the Avengers have faced before has led to this moment -
+                                                    the fate of Earth has never been so uncertain.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="parent--el">
+                                    <div class="two--col">
+                                        <div class="is-item has--img">
+                                            <figure class="the-img">
+                                                <img src="../assets/posters/avanger-endgame.jpg" alt="">
+                                            </figure>
+                                        </div>
+                                        <div class="is-item has--content">
+                                            <div class="is-item--inner">
+                                                <h1 class="slide-name"><span>Avengers: Endgame</span></h1>
+                                                <small>2019</small>
+                                                <hr class="horiz-line">
+                                                <p>
+                                                    The surviving members of the Avengers team and their allies must
+                                                    develop a new plan that will help withstand the ravages of the
+                                                    powerful titan Thanos.</p>
+                                                <p>After the most ambitious and tragic battle in history, they cannot
+                                                    make a mistake.</p>
+                                                <p>For the sake of victory, they will have to join forces and finally
+                                                    lay out all the hidden trump cards.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="parent--el">
+                                    <div class="two--col">
+                                        <div class="is-item has--img">
+                                            <figure class="the-img">
+                                                <img src="../assets/posters/batman2.jpg" alt="">
+                                            </figure>
+                                        </div>
+                                        <div class="is-item has--content">
+                                            <div class="is-item--inner">
+                                                <h1 class="slide-name"><span>The Dark Knight</span></h1>
+                                                <small>2008</small>
+                                                <hr class="horiz-line">
+                                                <p>Batman raises the stakes in the war on crime.</p>
+                                                <p>With the help of Lieutenant Jim Gordon and Attorney Harvey Dent, he
+                                                    intends to clear the streets of Gotham from crime.</p>
+                                                <p>The collaboration proves to be effective, but they soon find
+                                                    themselves in the midst of chaos unleashed by an up-and-coming crime
+                                                    genius known to the terrified townspeople as the Joker.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!-- <a href="#"><img src="../assets/posters/thor-ragnarok.jpg"></a>
+                            <a href="#"><img src="../assets/posters/spider-man.jpg"></a>
+                            <a href="#"><img src="../assets/posters/shazam.jpg"></a>
+                            <a href="#"><img src="../assets/posters/justice-league.jpg"></a>
+                            <a href="#"><img src="../assets/posters/dr-strange.jpg"></a>
+                            <a href="#"><img src="../assets/posters/cap-marvel.jpg"></a>
+                            <a href="#"><img src="../assets/posters/batman2.jpg"></a>
+                            <a href="#"><img src="../assets/posters/superman.jpg"></a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div id="serials" class="section">
+                    <div class="section-name">
+                        <h2 class="headline"><b>Serials</b></h2>
+                        <hr />
+                    </div>
+                    <div class="section-info center posters not-column">
+                        <div class="film-list">
+
+                            <div class="slide--parent">
+                                <div class="parent--el">
+                                    <div class="two--col">
+                                        <div class="is-item has--img">
+                                            <figure class="the-img">
+                                                <img src="../assets/posters/game-of-throne.jpg" alt="">
+                                            </figure>
+                                        </div>
+                                        <div class="is-item has--content">
+                                            <div class="is-item--inner">
+                                                <h1 class="slide-name"><span>Game of Thrones</span></h1>
+                                                <small>2011-2019</small>
+                                                <hr class="horiz-line">
+                                                <p>The time of prosperity is coming to an end, and the summer, which
+                                                    lasted almost a decade, is fading away. Around the center of power
+                                                    of the Seven Kingdoms, the Iron Throne, a conspiracy is brewing, and
+                                                    at this difficult time, the king decides to seek support from his
+                                                    youth friend Eddard Stark.</p>
+                                                <p>In a world where everyone strives for power, weaves intrigues and is
+                                                    ready to stab a knife in the back, there is a place for nobility,
+                                                    compassion and love. </p>
+                                                <p>Meanwhile, no one notices the awakening of darkness from the legends
+                                                    far in the North - and only the Wall protects the living south of
+                                                    it.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="parent--el">
+                                    <div class="two--col">
+                                        <div class="is-item has--img">
+                                            <figure class="the-img">
+                                                <img src="../assets/posters/viking.jpg" alt="">
+                                            </figure>
+                                        </div>
+                                        <div class="is-item has--content">
+                                            <div class="is-item--inner">
+                                                <h1 class="slide-name"><span>Vikings</span></h1>
+                                                <small>2013-...</small>
+                                                <hr class="horiz-line">
+                                                <p>A saga about the Scandinavian heroes of the Middle Ages. </p>
+                                                <p>The story of the rise of the powerful Viking leader Ragnar Lothbrok
+                                                    and his family, who are leading a campaign to foreign unknown lands.
+                                                </p>
+                                                <p>Norse legend says that he was a direct descendant of Odin, god of war
+                                                    and warriors.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="parent--el">
+                                    <div class="two--col">
+                                        <div class="is-item has--img">
+                                            <figure class="the-img">
+                                                <img src="../assets/posters/big-bang-theory.jpg" alt="">
+                                            </figure>
+                                        </div>
+                                        <div class="is-item has--content">
+                                            <div class="is-item--inner">
+                                                <h1 class="slide-name"><span>Big Bang Theory</span></h1>
+                                                <small>2007-2019</small>
+                                                <hr class="horiz-line">
+                                                <p>Two brilliant physicists, Leonard and Sheldon, are great minds who
+                                                    understand how the universe works.</p>
+                                                <p>But their genius doesn't help them in the least to communicate with
+                                                    people, especially with women.</p>
+                                                <p>Everything begins to change when the beautiful Penny settles in front
+                                                    of them.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="parent--el">
+                                    <div class="two--col">
+                                        <div class="is-item has--img">
+                                            <figure class="the-img">
+                                                <img src="../assets/posters/friends.jpg" alt="">
+                                            </figure>
+                                        </div>
+                                        <div class="is-item has--content">
+                                            <div class="is-item--inner">
+                                                <h1 class="slide-name"><span>Friends</span></h1>
+                                                <small>1994-2004</small>
+                                                <hr class="horiz-line">
+                                                <p>The main characters are six friends - Rachel, Monica, Phoebe, Joey,
+                                                    Chandler and Ross.</p>
+                                                <p>Three girls and three guys who are friends, live next door, kill time
+                                                    together and confront the harsh reality, share their secrets and
+                                                    sometimes fall very deeply in love.</p>
+                                                <p>Cult comedy television series, recognized by viewers around the
+                                                    world.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="parent--el">
+                                    <div class="two--col">
+                                        <div class="is-item has--img">
+                                            <figure class="the-img">
+                                                <img src="../assets/posters/mandalorian.jpg" alt="">
+                                            </figure>
+                                        </div>
+                                        <div class="is-item has--content">
+                                            <div class="is-item--inner">
+                                                <h1 class="slide-name"><span>Mandalorian</span></h1>
+                                                <small>2019-...</small>
+                                                <hr class="horiz-line">
+                                                <p>A lone Mandalorian mercenary lives on the edge of an inhabited galaxy
+                                                    beyond the reach of New Republic law.</p>
+                                                <p>The representative of the once mighty race of noble warriors is now
+                                                    forced to drag out a miserable existence among the dregs of society.
+                                                </p>
+                                                <p>The Mandalorian will do everything to fulfill his mission.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+                            <!-- <a href="#"><img src="../assets/posters/friends.jpg"></a>
+                            <a href="#"><img src="../assets/posters/mandalorian.jpg"></a>
+                            <a href="#"><img src="../assets/posters/viking.jpg"></a>
+                            <a href="#"><img src="../assets/posters/big-bang-theory.jpg"></a>
+                            <a href="#"><img src="../assets/posters/breaking-bad.jpg"></a>
+                            <a href="#"><img src="../assets/posters/game-of-throne.jpg"></a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="tab-item">
+                <div id="photos" class="section">
+                    <div class="section-name">
+                        <h2 class="headline"><b>Photos</b></h2>
+                        <hr />
+                    </div>
+                    <div class="section-info">
+
+
+
+                        <div class="post">
+                            <img width="600px" height="350px" class="post-photo" src="../assets/img/iron-man-art.jpg">
+                            <div class="info">
+                                <div class="descr">
+                                    Iron Man drawn by our subscriber. <p>You also can send us your drawing by mail</p>
+                                </div>
+
+
+                                <!-- <div class="commands">
+                                    <div class="statistic">
+                                        <img class="like" src="../assets/icons/like.svg">
+                                        <div class="likes-count">
+                                            7,404
+                                        </div>
+                                    </div>
+                                    <div class="statistic">
+                                        <img class="comment" src="../assets/icons/comment.svg">
+                                        25,3 M
+                                    </div>
+                                    <div class="statistic">
+                                        <img class="share" src="../assets/icons/share.svg">
+                                        4,553
+                                    </div>
+                                </div> -->
+
+                                <!-- <div class="comments">
+                                    <div class="comm">
+                                        <div class="nik">Boris573</div>
+                                        <div class="comm-text">It's awesome</div>
+                                    </div>
+                                    <div class="comm">
+                                        <div class="nik">Mad_Max123</div>
+                                        <div class="comm-text">I like it</div>
+                                    </div>
+                                    <div class="comm">
+                                        <div class="nik">Agrak</div>
+                                        <div class="comm-text">It really beautiful</div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+
+
+                        <div class="post">
+                            <img width="500px" height="500px" class="post-photo" src="../assets/img/batman-art.jpg">
+                            <div class="info">
+                                <div class="descr">
+                                    Batman from our subscriber. <p>You also can send us your drawing by mail</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="post">
+                            <img width="500px" height="500px" class="post-photo" src="../assets/img/superman-art.jpg">
+                            <div class="info">
+                                <div class="descr">
+                                    Another drawing from our subscriber. Now it is superman. <p>You also can send us your drawing by mail</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="post">
+                            <img width="600px" height="350px" class="post-photo" src="../assets/img/superman2-art.jpg">
+                            <div class="info">
+                                <div class="descr">
+                                    Awesome drawing that one of you send. <p>You also can send us your drawing by mail</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="tab-item">
+                <div id="contacts" class="section">
+                    <div class="section-name">
+                        <h2 class="headline"><b>Contacts</b></h2>
+                        <hr />
+                    </div>
+                    <div class="section-info">
+                        <div class="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2353.129514382792!2d27.48271721525684!3d53.85834488008952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbd07c88e6fa65%3A0x3caae88c96d29a8e!2z0L_RgNC-0YHQv9C10LrRgiDQlNC30LXRgNC20LjQvdGB0LrQvtCz0L4gOTUsINCc0LjQvdGB0LogMjIwMDg5!5e0!3m2!1sru!2sby!4v1606427384383!5m2!1sru!2sby"
+                                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0">
+                            </iframe>
+                        </div>
+                        <div class="offices">
+                            <div class="contact-info">
+                                <div id="office">Office 1:</div>
+                                <div class="office-info">
+                                    <div class="office-info__item">
+                                        <img height="24px" src="../assets/icons/pin.svg" />
+                                        Minsk, Dzerzhinsky prospect, 95
+                                    </div>
+                                    <div class="office-info__item">
+                                        <img height="24px" src="../assets/icons/phone.svg" />
+                                        +375333700026
+                                    </div>
+                                    <div class="office-info__item">
+                                        <img height="24px" src="../assets/icons/email.svg" />
+                                        chepicovboris@mail.ru
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-info">
+                                <div id="office">Office 2:</div>
+                                <div class="office-info">
+                                    <div class="office-info__item">
+                                        <img height="24px" src="../assets/icons/pin.svg" />
+                                        Minsk, Privaksalnaya square, 7
+                                    </div>
+                                    <div class="office-info__item">
+                                        <img height="24px" src="../assets/icons/phone.svg" />
+                                        +375336262808
+                                    </div>
+                                    <div class="office-info__item">
+                                        <img height="24px" src="../assets/icons/email.svg" />
+                                        chepicov.boris@mail.ru
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="left-text">
+                <div class="miracle-с">
+                    Copyright ©2020 All rights reserved
+                </div>
+            </div>
+            <div class="social-networks">
+                <a href="#"><img class="clarity" src="../assets/icons/telegram.svg"></a>
+                <a href="#"><img class="clarity" src="../assets/icons/twitter.svg"></a>
+                <a href="#"><img class="clarity" src="../assets/icons/linkedin.svg"></a>
+                <a href="#"><img class="clarity" src="../assets/icons/instagram.svg"></a>
+                <a href="#"><img class="clarity" src="../assets/icons/facebook.svg"></a>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js'></script>
+    <script src="../js/slider.js"></script>
+
+    <script src="../js/index.js" />
+
+    </body>
+</html>
